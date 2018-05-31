@@ -1,0 +1,176 @@
+
+/**************************DESKTOP HEADER STYLING*******************/
+header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+47,ffffff+100&1+19,0.74+82,0+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 19%, rgba(255,255,255,0.88) 47%, rgba(255,255,255,0.74) 82%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 19%,rgba(255,255,255,0.88) 47%,rgba(255,255,255,0.74) 82%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 19%,rgba(255,255,255,0.88) 47%,rgba(255,255,255,0.74) 82%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+	h2 {
+		margin: -5px 0 0 0;
+		color: $color-pri;
+	}
+	h3 {
+		margin: 0;
+		font-size: 16px;
+	}
+
+	input {
+		padding: 1px 5px;
+		margin-top: 2px;
+		width: 300px;
+		border-radius: 5px;
+	}
+
+	.headerLogo {
+		width: 100%;
+		transition: all .2s;
+	}
+	.headerLogo:hover {
+		opacity: .7;
+		transition: all .2s;
+	}
+
+
+	/*This is the section with the social links*/
+	ul {
+		list-style: none;
+		float: right;
+		margin: 0;
+
+		li {
+			float: left;
+			padding: 0 5px;
+		}
+
+		img {
+			width: 20px;
+		}
+		img:hover {
+			opacity: .7;
+		}
+	}
+
+	/*This is the right aligned navigation*/
+	nav {
+		float: right;
+		bottom: 5px;
+		font-family: $font-pri;
+		padding-top: 33px;
+		font-size: 19px;
+		font-weight: 400;
+
+		ul {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			line-height: 1;
+
+			li {
+				padding: 10px 16px;
+				margin: 0 5px;
+				/*width: 100px; Change this depending on Nav page amount*/
+				float: left;
+				text-align: center;
+				box-sizing: border-box;
+				transition: all .2s;
+			}
+
+			li a {
+				text-decoration: none;
+				display: block;
+				color: $color-ter;
+				transition: all .2s;
+			}
+
+			li:hover {
+				cursor: pointer;
+				background-image: url(../img/nav_hover.svg);
+				background-size: contain 100%;
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				transition: all .2s;
+			}
+			li:hover a {
+				color: $color-pri;
+				transition: all .2s;
+			}
+
+
+			li:hover ul li a {
+				text-decoration: none;
+				display: block;
+				color: $color-ter;
+				transition: all .2s;
+			}
+			li ul li:hover a {
+				color: $color-pri;
+				transition: all .2s;
+			}
+		}
+
+
+		.primary-nav li.parent > a:after {
+			content: " ▾";
+			color: $color-pri;
+		}
+
+
+		a.active, li:hover a.active {
+			color: $color-pri;
+			background-image: url(../img/nav_hover.svg);
+			background-size: contain 100%;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			transition: all .2s;
+		}
+
+	}
+
+	nav {
+		/*For Secondary page display*/
+		li ul {
+			position: absolute;
+			width: 7em;
+			left: -999em;
+			margin-top: 10px;
+			margin-left: -20px;
+
+			li {
+				width: 200px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				background-color: rgba(255, 255, 255, .75);
+				border-top: white 1px solid;
+			}
+			a {
+				color: $color-ter;
+			}
+			li:hover {
+				background-color: rgba(255, 255, 255, .9);
+			}
+
+			li:hover a {
+				color: #383838;
+			}
+		}
+
+		li:hover ul, li.sfhover ul {
+			left: auto;
+		}
+
+		/*For Tertiary page display*/
+		li ul ul {
+			margin: -1em 0 0 90px;
+		}
+
+		li:hover ul ul, li.sfhover ul ul {
+			left: -999em;
+		}
+
+		li:hover ul, li li:hover ul, li.sfhover ul, li li.sfhover ul {
+			left: auto;
+		}
+	}
+}/*END DESKTOP HEADER STYLING*/

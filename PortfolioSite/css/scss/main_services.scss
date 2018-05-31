@@ -1,0 +1,142 @@
+/***********************VARIABLES***************************/
+@import '_partials/variables';
+
+
+/************************GLOBAL & GRID CODING***********/
+@import '_partials/global';
+
+
+/***********************DESKTOP HEADER STYLING*********************/
+@import '_partials/header';
+
+
+
+
+
+
+/****************PAGE SPECIFIC STYLING (HOME PAGE)*********************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+
+/***********************DESKTOP HERO STYLING***********************/
+main {
+	display: block;
+
+
+	.heroimage {
+		background-image: url(../img/services/heroStock8.jpg);
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-ms-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+		background-position: center top;
+		background-attachment: fixed;
+
+
+		.hero {
+			padding-top: 100px;
+			padding-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 72px;
+			color: $color-pri;
+			margin: 0;
+		}
+		h1 {
+			margin-top: 0px;
+			font-size: 24px;
+			color: $color-ter;
+		}
+		.flame {
+			background-image: url(../img/MHDwhiteflame.svg);
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: full-width;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			height: 200px;
+			margin-bottom: -5px;
+			margin-top: -60px;
+		}
+	} /*END HERO STYLING*/
+
+
+	.row1 {
+		background-color: white;
+
+		
+	}
+
+	.row2 {
+		background-color: $color-qua;
+
+		h2 {
+			margin-bottom: 4px;
+		}
+
+		.inner-col {
+			background-color: white;
+			border-radius: 10px;
+
+			ul {
+				padding-left: 30px;
+			}
+		}
+
+	}
+
+	.usp1 {
+		background-color: $color-sec;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		h5 {
+			color: white;
+			text-align: center;
+			font-size: 26px;
+			margin: 8px 0;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+
+	.row3 {
+		.col-l {
+			background-image: url(../img/services/heroStock8.jpg);
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: cover;
+			background-position: center top;
+			background-attachment: fixed;
+
+			min-height: 200px;
+		}
+
+		.col-r {
+			padding: 80px 50px;
+		}
+	}
+
+}
+
+
+/********************************FOOTER STYLING*********************/
+@import '_partials/footer';
+
+
+
+/*************************TABLET STYLING********************************/
+
+
+
+
+/**************************MOBILE STYLING / TRUMPS ALL OTHER CODE FOR MOBILE IF NEEDED*******************************/
+@import '_partials/mobile';

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Moulton Hot Design Today to Get Your Branding Online</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+
+    <!--STYLING-->
+    <link href="css/main_contact.css" rel="stylesheet" type="text/css">
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark|Poiret+One" rel="stylesheet">
+    <!--For Mobile Header-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+    <!-- 01. Script for Desktop dropdown to function on IE-->
+    <script type="text/javascript"><!--//--><![CDATA[//><!--
+    sfHover = function() {
+        var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+        for (var i=0; i<sfEls.length; i++) {
+            sfEls[i].onmouseover=function() {
+                this.className+=" sfhover";
+            }
+            sfEls[i].onmouseout=function() {
+                this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+            }
+        }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+    //--><!]]></script>
+    <!-- 01. END-->
+
+
+    <!-- 02. Script for mobile header-->
+    <script>
+    $(document).ready(function(){
+        $(".nav-button").click(function () {
+        $(".nav-button,.primary-nav").toggleClass("open");
+        });    
+    });
+    </script>
+    <!-- 02. END-->
+</head>
+
+
+<body>
+
+
+
+    <!--For Facebook Plugin-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <main>
+
+
+
+    <div class="heroimage">
+        <header>
+            <div class="contained">
+                <div class="row">
+                    <div class="column col-3">
+                        <a href="index.html"><img class="headerLogo" src="img/MHDlogo2hr.png" alt="logo" /></a>
+                    </div>
+
+                    <div class="column col-9">
+
+                        <nav>
+
+                        <!--This is the button for the mobile menu, hidden on desktop-->
+                        <button class="nav-button">Toggle Navigation</button>
+                        <p class="mobileMenuLabel"><a href="index.html"><img src="img/MHDlogo2hr.png" alt="logo" /></a></p>
+
+
+                            <ul class="primary-nav">
+                                <li><a href="index.html">Home</a></li>
+
+                                <li class="parent"><a href="services.html">Services</a>
+                                    <ul><!--Secondary Nav-->
+                                        <li><a href="websites.html">Websites</a></li>
+                                        <li><a href="logos.html">Logos</a></li>
+                                        <li><a href="seo.html">SEO</a></li>
+                                    </ul><!--Secondary Nav END-->
+                                </li>
+
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a class="active" href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>        
+            </div>
+        </header>
+
+
+
+
+        <div class="row hero">
+            <div class="contained">
+                <div class="row column col-8 col-tab-10 col-mob-12">
+                    <h4>Contact</h4>
+                    <h1>Message Moulton Hot Design<br>Today About Website Services</h1>
+                    <a href="#formRow"><button>Send a Message &#187;</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row flame">
+
+        </div>
+    </div><!--END HERO IMAGE-->
+
+
+
+
+
+
+    <div class="row vspace row1">
+        <div class="contained flexParent">
+
+            <div class="column col-4 col-tab-6 col-mob-12">
+                <img class="photo-lg" src="img/laptopStocks.jpg">
+            </div>
+
+            <div class="column col-8 col-tab-6 col-mob-12">
+            <div class="inner-col">
+                <h2>Get Your Website Designed</h2>
+                <p>We've worked with a range of different types of businesses to create websites and branding that can be found online. If you have any questions about our services and if we are the right fit for getting your online, message Cody today. We are happy to answer your questions and get you the services online that you need.</p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row usp1" >
+    <div class="contained ">
+        <h5>We offer website and branding services for all types of businesses</h5>
+    </div>
+    </div>
+
+    
+
+
+
+    <div id="formRow" class="row vspace row2">
+    <div class="contained flexParent">
+        <div class="column col-8 col-tab-6 col-mob-12">
+            <form id="contactForm" class="contactForm" action="FormToEmail.php">
+
+                <label for="name">* Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name..." required>
+
+                <label for="email">* Phone</label>
+                <input type="phone" id="phone" name="phone" placeholder="555-555-5555..." required>
+
+                <label for="email">* Email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com..." required>
+
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Type your message here..." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit" class="formButton">
+
+            </form>
+        </div>
+        <div class="column col-4 col-tab-6 col-mob-12">
+            <h2>Contact Me at Any Location Below:</h2>
+            <ul class="clearfix">
+                <li><h3><a href="http://www.facebook.com" target="_blank"><img src="img/iconFB2.svg" alt="facebook icon" /> - Facebook</a></h3></li>
+                <li><h3><a href="http://www.twitter.com" target="_blank"><img src="img/iconTW2.svg" alt="twitter icon" /> - Twitter</a></h3></li>
+                <li><h3><a href="http://www.youtube.com" target="_blank"><img src="img/iconYT2.svg" alt="instagram icon" /> - YouTube</a></h3></li>
+            </ul>
+
+            <br><br>
+            <p>
+            <button>Email Me</button>
+            </p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="row usp1">
+        <div class="contained">
+            <div class="column col-3 col-tab-6 col-mob-12 footerLogo">
+                <a href="index.html"><img class="photo-lg" src="img/MHDlogo2full.png" alt="logo" /></a>
+            </div>
+
+            <div class="column col-3 col-tab-6 col-mob-12 sitemap">
+                <h5>
+                    <a href="index.html">Home &#187;</a><br>
+                    <a href="services.html">Services &#187;</a><br>
+                    <a href="portfolio.html">Portfolio &#187;</a><br>
+                    <a href="blog.html">Blog &#187;</a><br>
+                    <a class="active" href="contact.html">Contact &#187;</a><br>
+                </h5>
+            </div>
+
+            <div class="column col-3 col-tab-6 col-mob-12">
+                <ul class="clearfix">
+                    <li><a href="http://www.facebook.com" target="_blank"><img src="img/iconFB2.svg" alt="facebook icon" /></a></li>
+                    <li><a href="http://www.twitter.com" target="_blank"><img src="img/iconTW2.svg" alt="twitter icon" /></a></li>
+                    <li><a href="http://www.youtube.com" target="_blank"><img src="img/iconYT2.svg" alt="instagram icon" /></a></li>
+                </ul>
+
+                <br><br>
+                <p>
+                <button>Email Cody</button>
+                </p>
+                
+            </div>
+
+            <div class="column col-3 col-tab-6 col-mob-12">
+                
+                
+                <h6>Website Designed by Cody Moulton<br>
+                Copyright 2018</h6>
+            </div>
+
+
+
+        </div>
+    </div>
+    </footer>
+
+
+    <!--Script for Javascript import from Google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+
+</div>
+
+</body>
+</html>

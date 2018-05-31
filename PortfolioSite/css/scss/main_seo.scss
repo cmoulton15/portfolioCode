@@ -1,0 +1,279 @@
+/***********************VARIABLES***************************/
+@import '_partials/variables';
+
+
+/************************GLOBAL & GRID CODING***********/
+@import '_partials/global';
+
+
+/***********************DESKTOP HEADER STYLING*********************/
+@import '_partials/header';
+
+
+
+
+
+
+/****************PAGE SPECIFIC STYLING (HOME PAGE)*********************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+
+/***********************DESKTOP HERO STYLING***********************/
+main {
+	display: block;
+
+
+	.heroimage {
+		background-image: url(../img/seo/heroStock6.jpg);
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-ms-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+
+
+		.hero {
+			padding-top: 100px;
+			padding-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 72px;
+			color: $color-pri;
+			margin: 0;
+		}
+		h1 {
+			margin-top: 0px;
+			font-size: 24px;
+			color: $color-ter;
+		}
+		.flame {
+			background-image: url(../img/MHDwhiteflame.svg);
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: full-width;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			height: 200px;
+			margin-bottom: -5px;
+			margin-top: -60px;
+		}
+	} /*END HERO STYLING*/
+
+
+	.row1 {
+		background-color: white;
+		padding-bottom: 0px;
+
+		h2 {
+			margin-bottom: 0px;
+		}
+
+		ul {
+			margin-left: -30px;
+
+			li {
+				float: left;
+				margin-left: 30px;
+			}
+		}
+
+		@media only screen and (min-width: $mobile-screen) {
+			img {
+				padding-top: 15px;
+			}
+		}
+		
+		a {
+			color: $color-pri;
+		}
+		a:hover {
+			color: $color-sec;
+		}
+	}
+
+
+	.row2 {
+		padding-top: 0px;
+
+		h3 {
+			color: $color-sec;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		p {
+			margin-top: 0px;
+		}
+	}
+
+
+	.usp1 {
+		background-color: $color-qua;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		h2 {
+			text-align: center;
+			font-size: 26px;
+			margin: 8px 0;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+	.row3 {
+		background-color: $color-qua;
+	
+		.col-l {
+			background-image: url(../img/seo/ibwSEOfeat.jpg);
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: cover;
+			background-position: top left;	
+			background-color: black;
+
+			min-height: 200px;
+		}
+
+		.col-r {
+			@media only screen and (min-width: $mobile-screen) {
+				padding-top: 0;
+
+				button {
+					margin-bottom: 50px;
+				}
+			}
+			padding-bottom: 30px;
+
+			h3 {
+				text-align: center;
+				margin-top: 0;
+			}
+			p {
+				margin-top: 0;
+			}
+
+			.column {
+				@media only screen and (min-width: $mobile-screen) {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+
+				img {
+					border-radius: 15px;
+				}
+			}
+		}
+	}
+
+	.divider {
+		height: 200px;
+		background-image: url(../img/seo/heroStock6L.jpg);
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-ms-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+
+
+	.usp2 {
+		background-color: white;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		h2 {
+			text-align: center;
+			font-size: 26px;
+			margin: 8px 0;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		
+		h3:hover {
+			color: $color-pri;
+		}
+	}
+	
+	.row4 {
+		background-color: white;
+	
+		.col-r, .col-switch {
+			background-image: url(../img/seo/mmSEOfeat.jpg);
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: cover;
+			background-position: top left;	
+			background-color: black;
+
+			min-height: 200px;
+		}
+
+		.col-l {
+			@media only screen and (min-width: $mobile-screen) {
+				padding-top: 0;
+
+				button {
+					margin-bottom: 50px;
+				}
+			}
+			padding-bottom: 30px;
+
+			h3 {
+				text-align: center;
+				margin-top: 0;
+			}
+			p {
+				margin-top: 0;
+			}
+
+			.column {
+				@media only screen and (min-width: $mobile-screen) {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+
+				img {
+					border-radius: 15px;
+				}
+			}
+		}
+
+		@media only screen and (max-width: $mobile-screen) {
+			.col-switch {
+				display: block;
+			}
+		}
+	}
+
+
+}
+
+
+/********************************FOOTER STYLING*********************/
+@import '_partials/footer';
+
+
+
+/*************************TABLET STYLING********************************/
+
+
+
+
+/**************************MOBILE STYLING / TRUMPS ALL OTHER CODE FOR MOBILE IF NEEDED*******************************/
+@import '_partials/mobile';

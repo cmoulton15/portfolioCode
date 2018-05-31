@@ -1,0 +1,768 @@
+@charset "UTF-8";
+/***********************VARIABLES***************************/
+/*FONT STYLING FOR SITE*/
+/*COLOR STYLING FOR SITE*/
+/*red*/
+/*orange*/
+/*light red*/
+/*gray*/
+/*light gray*/
+/*TABLET AND MOBILE SIZING FOR SITE*/
+/*DEFAULT FONT APPLIED TO SITE*/
+body {
+  font-family: "Poiret One", cursive;
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: black; }
+
+h3 {
+  color: #F8AC18; }
+
+/************************GLOBAL & GRID CODING***********/
+/*THIS PARTIAL CONTAINS ROW, COLUMN, CONTAINER, AND GRID STYING OPTIONS FOR DESKTOP, TABLET, AND MOBILE*/
+.contained {
+  margin: auto;
+  width: 950px; }
+  @media only screen and (max-width: 950px) {
+    .contained {
+      width: 100%; } }
+
+.row {
+  width: 100%; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.column {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/*Flexbox implementation only on desktop*/
+@media only screen and (min-width: 768px) {
+  .flexParent {
+    display: flex; } }
+h2 {
+  color: #C60000; }
+
+/*DESKTOP COLUMNS*/
+.col-0 {
+  display: none; }
+
+.col-1 {
+  width: 8.33333333333%; }
+
+.col-2 {
+  width: 16.6666666666%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333333333%; }
+
+.col-5 {
+  width: 41.66666666666%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.333333333333%; }
+
+.col-8 {
+  width: 66.666666666666%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.333333333333%; }
+
+.col-11 {
+  width: 91.666666666666%; }
+
+.col-12 {
+  width: 100%; }
+
+/*Tablet Columns*/
+@media only screen and (max-width: 768px) {
+  .col-tab-0 {
+    display: none; }
+
+  .col-tab-1 {
+    width: 8.33333333333%; }
+
+  .col-tab-2 {
+    width: 16.6666666666%; }
+
+  .col-tab-3 {
+    width: 25%; }
+
+  .col-tab-4 {
+    width: 33.33333333333%; }
+
+  .col-tab-5 {
+    width: 41.66666666666%; }
+
+  .col-tab-6 {
+    width: 50%; }
+
+  .col-tab-7 {
+    width: 58.333333333333%; }
+
+  .col-tab-8 {
+    width: 66.666666666666%; }
+
+  .col-tab-9 {
+    width: 75%; }
+
+  .col-tab-10 {
+    width: 83.333333333333%; }
+
+  .col-tab-11 {
+    width: 91.666666666666%; }
+
+  .col-tab-12 {
+    width: 100%; } }
+/*Mobile Columns*/
+@media only screen and (max-width: 490px) {
+  .col-mob-0 {
+    display: none; }
+
+  .col-mob-1 {
+    width: 8.33333333333%; }
+
+  .col-mob-2 {
+    width: 16.6666666666%; }
+
+  .col-mob-3 {
+    width: 25%; }
+
+  .col-mob-4 {
+    width: 33.33333333333%; }
+
+  .col-mob-5 {
+    width: 41.66666666666%; }
+
+  .col-mob-6 {
+    width: 50%; }
+
+  .col-mob-7 {
+    width: 58.333333333333%; }
+
+  .col-mob-8 {
+    width: 66.666666666666%; }
+
+  .col-mob-9 {
+    width: 75%; }
+
+  .col-mob-10 {
+    width: 83.333333333333%; }
+
+  .col-mob-11 {
+    width: 91.666666666666%; }
+
+  .col-mob-12 {
+    width: 100%; } }
+/*COLUMN MARGIN STYLING NEEDED FOR SPACING BETWEEN COLUMNS*/
+.inner-col {
+  padding: 10px;
+  padding-bottom: 30px; }
+
+.inner-col::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/*MAP STYLING*/
+.map {
+  width: 100%;
+  height: 400px; }
+
+/*CONTACT FORM STYLING*/
+.contactForm {
+  background-color: white;
+  padding: 30px 30px 90px 30px;
+  border-radius: 10px; }
+  .contactForm label {
+    padding-bottom: 8px;
+    padding-left: 5px; }
+  .contactForm input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+    border-top: solid 2px white;
+    border-left: solid 2px white;
+    font-family: "Palanquin Dark", sans-serif; }
+  .contactForm .formButton {
+    width: 170px;
+    background-color: transparent; }
+  .contactForm input.formButton {
+    padding: 15px 0; }
+  .contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border-bottom: solid 2px #E4E4E4;
+    border-right: solid 2px #E4E4E4;
+    border-top: solid 2px white;
+    border-left: solid 2px white;
+    font-family: "Palanquin Dark", sans-serif; }
+
+/*IMAGE STYLING*/
+figure {
+  padding: 0;
+  margin: 0; }
+
+.photo-sm {
+  width: 40px;
+  margin-bottom: -10px; }
+
+.photo-md {
+  width: 50%; }
+
+.photo-lg {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .photo-md {
+    width: 50%; } }
+@media only screen and (max-width: 490px) {
+  .photo-md {
+    width: 100%; } }
+/*GLOBAL STYLING FOR BUTTONS*/
+button, .formButton {
+  padding: 15px 0 10px 18px;
+  width: 193px;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/button_def.png);
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  color: #8c8c8c;
+  transition: all .2s; }
+
+button:hover, .formButton:hover {
+  background-image: url(../img/button_hover.png);
+  background-color: transparent;
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: #C60000;
+  transition: all .2s; }
+
+/*ALIGNMENT*/
+.alignright {
+  float: right;
+  margin-right: 25px; }
+
+.alignleft {
+  float: left;
+  margin-right: 25px; }
+
+/*Shapes*/
+.circleWrap {
+  shape-outside: circle(); }
+
+.mullets {
+  list-style-image: url(../img/flameDot.svg);
+  padding-left: 17px; }
+
+.vspace {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.row-bg-pri {
+  background-color: white; }
+
+.row-bg-sec {
+  background-image: url(../img/handsCrossedHero.jpg);
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: cover;
+  background-position: center; }
+
+.row-bg-ter {
+  background-color: #8c8c8c; }
+
+/***********************DESKTOP HEADER STYLING*********************/
+/**************************DESKTOP HEADER STYLING*******************/
+header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+47,ffffff+100&1+19,0.74+82,0+100 */
+  background: -moz-linear-gradient(top, white 19%, rgba(255, 255, 255, 0.88) 47%, rgba(255, 255, 255, 0.74) 82%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 19%, rgba(255, 255, 255, 0.88) 47%, rgba(255, 255, 255, 0.74) 82%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 19%, rgba(255, 255, 255, 0.88) 47%, rgba(255, 255, 255, 0.74) 82%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+  /*This is the section with the social links*/
+  /*This is the right aligned navigation*/ }
+  header h2 {
+    margin: -5px 0 0 0;
+    color: #C60000; }
+  header h3 {
+    margin: 0;
+    font-size: 16px; }
+  header input {
+    padding: 1px 5px;
+    margin-top: 2px;
+    width: 300px;
+    border-radius: 5px; }
+  header .headerLogo {
+    width: 100%;
+    transition: all .2s; }
+  header .headerLogo:hover {
+    opacity: .7;
+    transition: all .2s; }
+  header ul {
+    list-style: none;
+    float: right;
+    margin: 0; }
+    header ul li {
+      float: left;
+      padding: 0 5px; }
+    header ul img {
+      width: 20px; }
+    header ul img:hover {
+      opacity: .7; }
+  header nav {
+    float: right;
+    bottom: 5px;
+    font-family: "Palanquin Dark", sans-serif;
+    padding-top: 33px;
+    font-size: 19px;
+    font-weight: 400; }
+    header nav ul {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      line-height: 1; }
+      header nav ul li {
+        padding: 10px 16px;
+        margin: 0 5px;
+        /*width: 100px; Change this depending on Nav page amount*/
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+        transition: all .2s; }
+      header nav ul li a {
+        text-decoration: none;
+        display: block;
+        color: #8c8c8c;
+        transition: all .2s; }
+      header nav ul li:hover {
+        cursor: pointer;
+        background-image: url(../img/nav_hover.svg);
+        background-size: contain 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        transition: all .2s; }
+      header nav ul li:hover a {
+        color: #C60000;
+        transition: all .2s; }
+      header nav ul li:hover ul li a {
+        text-decoration: none;
+        display: block;
+        color: #8c8c8c;
+        transition: all .2s; }
+      header nav ul li ul li:hover a {
+        color: #C60000;
+        transition: all .2s; }
+    header nav .primary-nav li.parent > a:after {
+      content: " ▾";
+      color: #C60000; }
+    header nav a.active, header nav li:hover a.active {
+      color: #C60000;
+      background-image: url(../img/nav_hover.svg);
+      background-size: contain 100%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      transition: all .2s; }
+  header nav {
+    /*For Secondary page display*/
+    /*For Tertiary page display*/ }
+    header nav li ul {
+      position: absolute;
+      width: 7em;
+      left: -999em;
+      margin-top: 10px;
+      margin-left: -20px; }
+      header nav li ul li {
+        width: 200px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-top: white 1px solid; }
+      header nav li ul a {
+        color: #8c8c8c; }
+      header nav li ul li:hover {
+        background-color: rgba(255, 255, 255, 0.9); }
+      header nav li ul li:hover a {
+        color: #383838; }
+    header nav li:hover ul, header nav li.sfhover ul {
+      left: auto; }
+    header nav li ul ul {
+      margin: -1em 0 0 90px; }
+    header nav li:hover ul ul, header nav li.sfhover ul ul {
+      left: -999em; }
+    header nav li:hover ul, header nav li li:hover ul, header nav li.sfhover ul, header nav li li.sfhover ul {
+      left: auto; }
+
+/*END DESKTOP HEADER STYLING*/
+/****************PAGE SPECIFIC STYLING (HOME PAGE)*********************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+/***********************DESKTOP HERO STYLING***********************/
+main {
+  display: block;
+  /*END HERO STYLING*/ }
+  main .heroimage {
+    background-image: url(../img/contact/heroStock5.jpg);
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+    main .heroimage .hero {
+      padding-top: 100px;
+      padding-bottom: 20px; }
+    main .heroimage h4 {
+      font-size: 72px;
+      color: #C60000;
+      margin: 0; }
+    main .heroimage h1 {
+      margin-top: 0px;
+      font-size: 24px;
+      color: #8c8c8c; }
+    main .heroimage .flame {
+      background-image: url(../img/MHDwhiteflame.svg);
+      -webkit-background-size: 100% auto;
+      -moz-background-size: 100% auto;
+      -ms-background-size: 100% auto;
+      -o-background-size: 100% auto;
+      background-size: full-width;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      height: 200px;
+      margin-bottom: -5px;
+      margin-top: -60px; }
+  main .row1 .vid {
+    width: 100%;
+    height: 300px; }
+  @media only screen and (min-width: 490px) {
+    main .row1 img {
+      padding-top: 40px; } }
+  main .row2 {
+    background-color: #E4E4E4; }
+    main .row2 h2 {
+      margin-bottom: 4px; }
+    main .row2 ul {
+      list-style: none;
+      float: left;
+      margin-bottom: 18px;
+      margin-top: 10px;
+      padding-left: 0;
+      padding-right: 60px; }
+      @media only screen and (max-width: 768px) {
+        main .row2 ul {
+          float: left;
+          padding-left: 0; } }
+      main .row2 ul li {
+        padding: 0 5px; }
+      main .row2 ul img {
+        width: 60px; }
+      main .row2 ul img:hover {
+        opacity: .7; }
+    main .row2 h3 a {
+      vertical-align: middle;
+      text-decoration: none;
+      color: #F8AC18; }
+    main .row2 h3 a:hover {
+      color: #C60000; }
+  main .usp1 {
+    background-color: #F8AC18;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+    main .usp1 h5 {
+      color: white;
+      text-align: center;
+      font-size: 26px;
+      margin: 8px 0;
+      padding-left: 10px;
+      padding-right: 10px; }
+  main .mullets {
+    list-style-image: url(../img/MoultonLogoBullet.svg);
+    padding-left: 17px; }
+
+/********************************FOOTER STYLING*********************/
+footer {
+  background-color: #383838;
+  padding-top: 10px;
+  /*Styling the social icons*/ }
+  footer img.photo-lg:hover {
+    opacity: .7; }
+  footer .sitemap {
+    padding-left: 80px;
+    padding-top: 40px; }
+  footer a {
+    color: #F8AC18;
+    text-decoration: none;
+    padding-bottom: 6px; }
+  footer a.active {
+    color: white; }
+  footer a:hover {
+    color: white; }
+  footer h5 {
+    color: white;
+    font-weight: 300;
+    color: #E4E4E4; }
+  footer h6 {
+    padding-top: 38px; }
+  footer button {
+    color: #E4E4E4; }
+  footer p {
+    text-align: center;
+    color: black; }
+    @media only screen and (max-width: 768px) {
+      footer p {
+        text-align: left;
+        padding-left: 5px; } }
+  footer ul {
+    list-style: none;
+    float: left;
+    margin-bottom: 18px;
+    margin-top: 60px;
+    padding-left: 0;
+    padding-right: 60px; }
+    @media only screen and (max-width: 768px) {
+      footer ul {
+        float: left;
+        padding-left: 0; } }
+    footer ul li {
+      float: left;
+      padding: 0 5px; }
+    footer ul img {
+      width: 40px; }
+    footer ul img:hover {
+      opacity: .7; }
+  @media only screen and (max-width: 768px) {
+    footer {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+      footer .sitemap {
+        padding-bottom: 85px;
+        padding-top: 87px; }
+      footer ul {
+        padding-left: 45px; }
+      footer button {
+        margin-left: 45px; }
+      footer h6 {
+        padding-left: 60px; } }
+  @media only screen and (max-width: 490px) {
+    footer .sitemap {
+      padding: 0 0 0 60px; }
+    footer ul {
+      margin-top: 0px; }
+    footer h6 {
+      padding-top: 0px; }
+    footer .footerLogo {
+      padding-right: 50px; } }
+
+/*************************TABLET STYLING********************************/
+/**************************MOBILE STYLING / TRUMPS ALL OTHER CODE FOR MOBILE IF NEEDED*******************************/
+/*****MOBILE HEADER | NAVIGATION*****/
+header {
+  /* hide the navigation button by default */
+  /* End Mobile Styles */ }
+  header .nav-button {
+    display: none; }
+  header .mobileMenuLabel {
+    display: none; }
+  @media only screen and (max-width: 768px) {
+    header {
+      /* Navigation Button
+      -------------------------------------------------------- */
+      /*Custom header styling*/
+      /*END custom header styling*/
+      /* Navigation Bar
+      -------------------------------------------------------- */
+      /* Toggle the navigation bar open  */
+      /* Submenus – optional .parent class indicates dropdowns */
+      /*Custom Line item styling, open up tertiary nav styling*/
+      /*END custom Line item styling*/ }
+      header .headerLogo, header .socialIcons img, header h2, header h3, header input {
+        display: none; }
+      header .column {
+        padding: 0; }
+      header .mobileMenuLabel {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-top: -25px;
+        margin-left: -65px;
+        z-index: 999; }
+      header .mobileMenuLabel img {
+        width: 130px; }
+      header nav ul li {
+        padding: 0; }
+      header nav ul li:hover {
+        background-image: none; }
+      header nav li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: 0px; }
+      header nav ul li ul {
+        margin-top: 10px; }
+        header nav ul li ul li {
+          left: auto; }
+      header nav ul li.active a {
+        color: #C60000;
+        background-image: none; }
+      header .nav-button {
+        display: block;
+        position: absolute;
+        top: 21px;
+        right: 7px;
+        width: 50px;
+        height: 35px;
+        background: url("../img/menu-icon-large.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 30px, 100%;
+        cursor: pointer;
+        z-index: 999;
+        text-indent: -9999px; }
+      header .nav-button:hover {
+        background-color: rgba(0, 0, 0, 0.1); }
+      header .nav-button.open {
+        background: url("../img/close-icon-large.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 21px, 100%; }
+      header body {
+        padding-top: 50px; }
+      header .primary-nav {
+        width: 100%;
+        float: none;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+99&0.9+0,0.45+79,0+100 */
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.45) 79%, rgba(255, 255, 255, 0.02) 99%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.45) 79%, rgba(255, 255, 255, 0.02) 99%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.45) 79%, rgba(255, 255, 255, 0.02) 99%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#00ffffff',GradientType=0 );
+        /* IE6-9 */
+        display: block;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 998;
+        clear: both; }
+      header .primary-nav ul {
+        margin-left: -20px !important; }
+      header .primary-nav li {
+        display: none;
+        width: 100%;
+        font-family: Arial;
+        background-color: white; }
+      header .primary-nav li a {
+        display: block;
+        text-align: left;
+        width: 90%;
+        padding: 10px 5%;
+        font-size: 14px;
+        font-weight: bold;
+        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+        color: #8c8c8c;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.1); }
+      header .primary-nav li a:hover {
+        border-top-color: transparent; }
+      header .primary-nav > li:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.2); }
+      header .primary-nav.open {
+        height: auto;
+        padding-top: 60px; }
+      header .primary-nav.open li {
+        display: block; }
+      header .primary-nav > li:hover > a {
+        background-color: #ededed;
+        border-bottom-color: transparent; }
+      header .primary-nav li.parent > a:after {
+        content: "▾";
+        color: rgba(255, 255, 255, 0.5);
+        float: right; }
+      header .primary-nav li.parent > a:hover {
+        background-color: #ededed; }
+      header .primary-nav li ul {
+        display: none;
+        background: rgba(0, 0, 0, 0.25);
+        border-top: 0 none;
+        padding: 0;
+        margin-left: 0px; }
+      header .primary-nav li ul a {
+        border: 0 none;
+        font-size: 12px;
+        padding: 10px 7%;
+        font-weight: normal; }
+      header .primary-nav li:hover ul {
+        display: block;
+        border-top: 0 none; }
+      header .primary-nav a.active, header li:hover a.active {
+        color: #C60000;
+        background-image: url(../img/nav_hover.svg);
+        background-size: contain 100%;
+        background-position: 11px bottom;
+        background-repeat: no-repeat;
+        transition: all .2s; }
+      header .primary-nav li:hover a.active {
+        background-position: 14px bottom; }
+      header .primary-nav li ul li {
+        opacity: .8; }
+      header .primary-nav li ul li ul {
+        margin-top: -150px; }
+      header .primary-nav li ul li ul li {
+        opacity: .8; }
+      header .primary-nav li ul li:hover ul {
+        margin-top: -0px; } }
+
+/*END MOBILE NAVIGATION | HEADER STYLING*/
+
+/*# sourceMappingURL=main_contact.css.map */

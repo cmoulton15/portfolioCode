@@ -1,0 +1,214 @@
+
+/*****MOBILE HEADER | NAVIGATION*****/
+
+
+header {
+	.nav-button { display: none; } /* hide the navigation button by default */
+	.mobileMenuLabel {
+		display: none;
+	}
+	@media only screen and (max-width: $tablet-screen) {
+
+		/* Navigation Button
+		-------------------------------------------------------- */
+		.headerLogo, .socialIcons img, h2, h3, input {
+			display: none;
+		}
+		/*Custom header styling*/
+		.column {
+			padding: 0;
+		}
+		.mobileMenuLabel {
+			display: block;
+			position: absolute;
+			left: 50%;
+			margin-top: -25px;
+			margin-left: -65px;
+			z-index: 999;
+		}
+		.mobileMenuLabel img {
+			width: 130px;
+		}	
+
+			
+		nav {
+			ul li {
+				padding: 0;
+			}
+			ul li:hover {
+				background-image: none;
+			}
+			li ul {
+				display: block;
+				position: relative;
+				width: 100%;
+				margin-top: 0px;
+			}
+			ul li ul {
+				margin-top: 10px;
+
+				li {
+					left: auto;
+				}
+			}
+			ul li.active a {
+				color: $color-pri;
+				background-image: none;
+			}
+		}/*END custom header styling*/
+		
+
+
+		.nav-button {
+			display: block;
+			position: absolute;
+			top: 21px;
+			right: 7px;
+			width: 50px;
+			height: 35px;
+			background: url('../img/menu-icon-large.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 30px, 100%;
+			cursor: pointer;
+			z-index: 999;
+			text-indent: -9999px;
+		}
+		.nav-button:hover {
+			background-color: rgba(0,0,0,.1);
+		}
+		.nav-button.open {
+			background: url('../img/close-icon-large.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 21px, 100%;
+		}
+
+		/* Navigation Bar
+		-------------------------------------------------------- */
+
+		body { padding-top: 50px; }
+
+		.primary-nav {
+			width: 100%;
+			float: none;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+99&0.9+0,0.45+79,0+100 */
+			background: -moz-linear-gradient(top, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.45) 79%, rgba(255,255,255,0.02) 99%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.45) 79%,rgba(255,255,255,0.02) 99%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.45) 79%,rgba(255,255,255,0.02) 99%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+			
+			display: block;
+			height: 60px;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 998;
+			clear: both;
+		}
+		.primary-nav ul {
+			margin-left: -20px!important;
+		}
+		.primary-nav li {
+			display: none;
+			width: 100%;
+			font-family: Arial;
+			background-color: white;
+		}
+		.primary-nav li a {
+			display: block;
+			text-align: left;
+			width: 90%;
+			padding: 10px 5%;
+			font-size: 14px;
+			font-weight: bold;
+			text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+			color: $color-ter;
+			text-decoration: none;
+			border-bottom: 1px solid rgba(0,0,0,.2);
+			border-top: 1px solid rgba(255,255,255,.1);
+		}
+		.primary-nav li a:hover {
+			border-top-color: transparent;
+		}
+		.primary-nav > li:first-child {
+			border-top: 1px solid rgba(0,0,0,.2);
+		}
+
+		/* Toggle the navigation bar open  */
+
+		.primary-nav.open {
+			height: auto;
+			padding-top: 60px;
+		}
+		.primary-nav.open li {
+			display: block;
+		}
+
+		/* Submenus – optional .parent class indicates dropdowns */
+
+		.primary-nav > li:hover > a {
+			background-color: #ededed;
+			border-bottom-color: transparent;
+		}
+		.primary-nav li.parent > a:after {
+			content: "▾";
+			color: rgba(255,255,255,.5);
+			float: right;
+		}
+		.primary-nav li.parent > a:hover {
+			background-color: #ededed;
+		}
+		.primary-nav li ul {
+			display: none;
+			background: rgba(0,0,0,.25);
+			border-top: 0 none;
+			padding: 0;
+			margin-left: 0px;
+		}
+		.primary-nav li ul a {
+			border: 0 none;
+			font-size: 12px;
+			padding: 10px 7%;
+			font-weight: normal;
+		}
+		.primary-nav li:hover ul {
+			display: block;
+			border-top: 0 none;
+		}
+
+
+
+		.primary-nav a.active, li:hover a.active {
+			color: $color-pri;
+			background-image: url(../img/nav_hover.svg);
+			background-size: contain 100%;
+			background-position: 11px bottom;
+			background-repeat: no-repeat;
+			transition: all .2s;
+		}
+		.primary-nav li:hover a.active {
+			background-position: 14px bottom;
+		}
+
+
+		/*Custom Line item styling, open up tertiary nav styling*/
+		.primary-nav li ul li {
+			opacity: .8;
+		}
+		.primary-nav li ul li ul {
+			margin-top: -150px;
+		}
+		.primary-nav li ul li ul li {
+			opacity: .8;
+		}
+		.primary-nav li ul li:hover ul {
+			margin-top: -0px;
+		}/*END custom Line item styling*/
+
+	} /* End Mobile Styles */
+	
+}/*END MOBILE NAVIGATION | HEADER STYLING*/

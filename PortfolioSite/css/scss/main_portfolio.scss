@@ -1,0 +1,248 @@
+/***********************VARIABLES***************************/
+@import '_partials/variables';
+
+
+/************************GLOBAL & GRID CODING***********/
+@import '_partials/global';
+
+
+/***********************DESKTOP HEADER STYLING*********************/
+@import '_partials/header';
+
+
+
+
+
+
+/****************PAGE SPECIFIC STYLING (HOME PAGE)*********************/
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
+
+/***********************DESKTOP HERO STYLING***********************/
+main {
+	display: block;
+
+
+	.heroimage {
+		background-image: url(../img/portfolio/heroStock2.jpg);
+		-webkit-background-size: 100% auto;
+		-moz-background-size: 100% auto;
+		-ms-background-size: 100% auto;
+		-o-background-size: 100% auto;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+
+
+		.hero {
+			padding-top: 100px;
+			padding-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 72px;
+			color: $color-pri;
+			margin: 0;
+		}
+		h1 {
+			margin-top: 0px;
+			font-size: 24px;
+			color: $color-ter;
+		}
+		.flame {
+			background-image: url(../img/MHDwhiteflame.svg);
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: full-width;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			height: 200px;
+			margin-bottom: -5px;
+			margin-top: -60px;
+		}
+	} /*END HERO STYLING*/
+
+
+	.row1 {
+		background-color: white;
+
+		h2, h3, h4 {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		p {
+			margin-top: 0;
+		}
+
+		hr {
+			background-color: $color-qua;
+			height: 1px;
+			border: none;
+
+		}
+	}
+
+	.row2 {
+		background-color: $color-qua;
+
+		h2 {
+			margin-bottom: 4px;
+		}
+		h2, h3, h4 {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		h3 {
+			color: $color-ter;
+		}
+
+		.inner-col {
+			background-color: white;
+			border-radius: 10px;
+
+			h3 {
+				color: $color-sec;
+			}
+
+			ul {
+				padding-left: 30px;
+				margin-top: 0;
+			}
+		}
+
+	}
+
+	.usp1 {
+		background-color: $color-sec;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		h5 {
+			color: white;
+			text-align: center;
+			font-size: 26px;
+			margin: 8px 0 0 0;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		h4 {
+			margin-top: 0;
+			text-align: center;
+			color: white;
+			font-size: 20;
+			font-weight: 300;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+
+	.row3 {
+		padding: 0;
+		background-color: $color-qua;
+
+		h3 {
+			text-align: center;
+			font-size: 32px;
+			margin-top: 0;
+			margin-bottom: 0;
+			color: $color-pri;
+			background-color: white;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			transition: all .5s;
+		}
+		h4 {
+			text-align: center;
+			margin-top: 0;
+			padding-bottom: 7px;
+			color: $color-ter;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+			background-color: white;
+			transition: all .5s;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.column {
+			padding: 75px 50px;
+		}
+
+		.ex1, .ex2, .ex3, .ex4, .ex5, .ex6, .ex7 {
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			-ms-background-size: 100% auto;
+			-o-background-size: 100% auto;
+			background-size: cover;
+			background-position: center;
+			transition: all .5s;
+		}
+		.ex1:hover, .ex2:hover, .ex3:hover, .ex4:hover, .ex5:hover, .ex6:hover, .ex7:hover {
+			cursor: pointer;
+			transform: scale(1.06);
+			transition: all .5s;
+
+			h3 {color: transparent; background-color: transparent; box-shadow: none; transition: all .5s;}
+			h4 {color: transparent; background-color: transparent; box-shadow: none; transition: all .5s;}
+		}
+
+
+		.ex1 {background-image: url(../img/portfolio/dispTG1.jpg);}
+		.ex1:hover {background-image: url(../img/portfolio/dispTG2.jpg);}
+
+		.ex2 {background-image: url(../img/portfolio/dispIBW1.jpg);	}
+		.ex2:hover {background-image: url(../img/portfolio/dispIBW2.jpg);}
+
+		.ex3 {background-image: url(../img/portfolio/dispMM1.jpg);}
+		.ex3:hover {background-image: url(../img/portfolio/dispMM2.jpg);}
+
+		.ex4 {background-image: url(../img/portfolio/dispYB1.jpg);}
+		.ex4:hover {background-image: url(../img/portfolio/dispYB2.jpg);}
+
+		.ex5 {background-image: url(../img/portfolio/dispNG1.jpg);}
+		.ex5:hover {background-image: url(../img/portfolio/dispNG2.jpg);}
+
+		.ex6 {background-image: url(../img/portfolio/dispMHD1.jpg);}
+		.ex6:hover {background-image: url(../img/portfolio/dispMHD2.jpg);}
+
+		.ex7 {background-image: url(../img/portfolio/dispWW1.jpg);}
+		.ex7:hover {background-image: url(../img/portfolio/dispWW2.jpg);}
+
+		.ex8:hover {
+			h3 {
+				color: $color-sec;
+			}
+		}
+	}
+
+
+	.row4 {
+		button {
+			margin-top: 100px;
+		}
+		@media only screen and (max-width: $mobile-screen) {
+			button {
+				margin-top: 0px;
+			}
+		}
+	}
+
+}
+
+
+/********************************FOOTER STYLING*********************/
+@import '_partials/footer';
+
+
+
+/*************************TABLET STYLING********************************/
+
+
+
+
+/**************************MOBILE STYLING / TRUMPS ALL OTHER CODE FOR MOBILE IF NEEDED*******************************/
+@import '_partials/mobile';

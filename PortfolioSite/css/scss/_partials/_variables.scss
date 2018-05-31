@@ -1,0 +1,36 @@
+
+/*FONT STYLING FOR SITE*/
+$font-pri: 'Palanquin Dark', sans-serif;
+$font-sec: 'Poiret One', cursive;
+
+/*COLOR STYLING FOR SITE*/
+$color-pri: #C60000; /*red*/
+$color-sec: #F8AC18; /*orange*/
+$color-sec2: #ef8e7f; /*light red*/
+$color-ter: #8c8c8c; /*gray*/
+$color-qua: #E4E4E4; /*light gray*/
+
+
+/*TABLET AND MOBILE SIZING FOR SITE*/
+$tablet-screen: 768px;
+$mobile-screen: 490px;
+
+
+/*DEFAULT FONT APPLIED TO SITE*/
+body {
+	font-family: $font-sec;
+	color: $color-ter;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+	font-family: $font-pri;
+	font-weight: black;
+}
+
+h3 {
+	color: $color-sec;
+}
